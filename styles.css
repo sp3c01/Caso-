@@ -1,0 +1,99 @@
+/* Estilos gerais */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f5f5dc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #f5f5dc;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #f5f5dc;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #f5f5dc;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos de cada seção */
+
+.intro {
+    background-color: #e9e7da;
+    padding: 1rem;
+    border: 1px solid #333;
+}
+
+.cases, .riddles, .files, .resolution {
+    margin-top: 1.5rem;
+}
+
+.case, .riddle, .file {
+    background-color: #e9e7da;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #333;
+}
+
+.case-details, .riddle-details {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f2f2f2;
+}
+
+.file {
+    position: relative;
+}
+
+.file img,
+.file video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Formulário de resolução */
+#solutionForm {
+    background-color: #e9e7da;
+    padding: 1rem;
+    border: 1px solid #333;
+}
+
+#solution {
+    width: 100%;
+}
+
+#solutionForm input[type="submit"] {
+    background-color: #333;
+    color: #f5f5dc;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top

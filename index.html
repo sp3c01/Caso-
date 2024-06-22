@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Mistérios e Enigmas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para a tela de carregamento */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading-video {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tela de carregamento com vídeo -->
+    <div class="loading-screen">
+        <video class="loading-video" width="100%" height="100%" autoplay muted onended="endLoadingScreen()">
+            <source src="loading.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <header>
+        <h1>O Grande Mistério</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="casos.html">Casos</a></li>
+                <li><a href="enigmas.html">Enigmas</a></li>
+                <li><a href="arquivos.html">Arquivos</a></li>
+                <li><a href="resolucao.html">Resolução</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Bem-vindo ao Grande Mistério</h2>
+            <p>Desafie-se a resolver casos intrigantes e enigmas desafiadores. Será que você tem o que é necessário para desvendar os mistérios?</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Site de Mistérios e Enigmas</p>
+    </footer>
+
+    <script>
+        // Função para esconder a tela de carregamento após o término do vídeo
+        function endLoadingScreen() {
+            document.querySelector('.loading-screen').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
